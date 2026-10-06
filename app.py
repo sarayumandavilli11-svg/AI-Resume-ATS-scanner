@@ -4,7 +4,7 @@ import re
 
 st.set_page_config(page_title="AI Resume Scanner", page_icon="📄", layout="wide")
 st.title("📄 AI Resume ATS Scanner")
-st.markdown("### College Students Kosam - Built by YOU! 🚀")
+st.markdown("### Built by SARAYU | Get FAANG- Ready ATS Score 🚀")
 st.write("---")
 
 TECH_KEYWORDS = ["python", "sql", "machine learning", "aws", "pandas", "streamlit", "github", "data analysis", "aiml", "power bi", "excel", "java"]
