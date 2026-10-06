@@ -1,5 +1,5 @@
 import streamlit as st
-import PyPDF2
+from pypdf import PdfReader
 import re
 
 st.set_page_config(page_title="AI Resume Scanner", page_icon="📄", layout="wide")
@@ -12,7 +12,7 @@ TECH_KEYWORDS = ["python", "sql", "machine learning", "aws", "pandas", "streamli
 uploaded = st.file_uploader("📤 Nee Resume PDF ikkada drop chey bro", type="pdf")
 
 if uploaded:
-    reader = PyPDF2.PdfReader(uploaded)
+    reader = PdfReader(uploaded)
     full_text = ""
     for p in reader.pages:
         txt = p.extract_text()
